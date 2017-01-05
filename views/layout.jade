@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title #{'Blog - ' + title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="https://use.fontawesome.com/6047fae5b4.js")
+
+  body
+    header(style='background-image: url(#{bg})')
+      nav
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/about') About
+          li
+            a(href='/post') Post
+          li
+            a(href='/contact') Contact
+      
+      #heading
+        h1= heading
+        p= subHeading
+    
+    main
+      #content-container
+        block content
+    
+    footer
+      #socialMediaLinks
+        ul
+          li
+            a(href='https://twitter.com/')
+              i(class="fa fa-twitter-square" aria-hidden="true")
+          li
+            a(href='https://www.facebook.com/')
+              i(class="fa fa-facebook-square" aria-hidden="true")
+          li
+            a(href='https://github.com/')
+              i(class="fa fa-github-square" aria-hidden="true")
+      
+      p Copyright © Your Website 2016
+            

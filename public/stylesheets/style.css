@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 18px arial, sans-serif;
+}
+
+header {
+  padding: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header nav li {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header nav li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+header nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav li a:hover {
+  color: #d9d9d9;
+}
+
+#heading {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+  color: white;
+}
+
+#heading h1 {
+  font-size: 60px;
+}
+
+@media (max-width: 800px) {
+  #heading h1 {
+    font-size: 40px;
+  }
+}
+
+#heading p {
+  font-size: 24px;
+}
+
+main {
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+
+#content-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  #content-container {
+    width: 90%;
+  }
+}
+
+#index-content li {
+  border-bottom: 1px solid black;
+  margin: 20px 0;
+  padding: 15px;
+}
+
+#index-content h2,
+#index-content h3,
+#index-content p {
+  margin-bottom: 5px;
+}
+
+#index-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#index-content h3 {
+  font-size: 24px;
+}
+
+#index-content p {
+  font-size: 18px;
+}
+
+#about-content p,
+#post-content p {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  #about-content p,
+  #post-content p {
+    font-size: 18px;
+  }
+}
+
+#content-container form {
+  margin: 10px 0;
+  width: 60%;
+}
+
+@media (max-width: 800px) {
+  #content-container form {
+    width: 80%;
+  }
+}
+
+#content-container label {
+  display: block;
+  cursor: pointer;
+}
+
+#content-container input,
+#content-container textarea {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+#content-container textarea {
+  height: 100px;
+  resize: none;
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 15px;
+  margin: 8px 0;
+  color: black;
+  border: 1px solid black;
+}
+
+a.button:hover {
+  background: #3333ff;
+  color: white;
+}
+
+footer {
+  margin: 35px 0;
+  text-align: center;
+}
+
+#socialMediaLinks {
+  margin: 10px 0;
+}
+
+#socialMediaLinks li {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+#socialMediaLinks .fa {
+  font-size: 35px;
+  color: black;
+}
+
+#socialMediaLinks .fa:hover {
+  color: blue;
+}

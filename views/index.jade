@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  #index-content
+    ul
+      each post in posts
+        li
+          h2= post.heading
+          h3= post.subHeading
+          p= post.postedBy
+    a.button(href="/post") Older posts

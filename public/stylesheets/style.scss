@@ -1,0 +1,176 @@
+//compile
+
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 18px arial, sans-serif;
+}
+
+header {
+  padding: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  nav {
+
+    li {
+      width: 25%;
+      display: inline-block;
+      text-align: center;
+      @include mQ(600px) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $headingColor;
+
+        &:hover {
+          color: darken($headingColor, 15);
+        }
+      }
+    }
+  }
+}
+
+#heading {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+  color: $headingColor;
+
+    h1 {
+      font-size: 60px;
+      @include mQ(800px) {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      font-size: 24px;
+    }
+}
+
+main {
+  padding: 10px 0;
+  border-bottom: 1px solid $mainColor;
+}
+
+#content-container {
+  width: 70%;
+  margin: 0 auto;
+  @include mQ(800px) {
+    width: 90%;
+  }
+}
+
+#index-content {
+  li {
+    border-bottom: 1px solid $mainColor;
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  h2,
+  h3,
+  p {
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+#about-content,
+#post-content {
+  p {
+    font-size: 22px;
+    margin: 10px 0;
+    @include mQ(600px) {
+      font-size: 18px;
+    }
+  }
+}
+
+#content-container {
+  form {
+    margin: 10px 0;
+    width: 60%;
+    @include mQ(800px) {
+      width: 80%;
+    }
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+  }
+
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 15px;
+  margin: 8px 0;
+  color: $mainColor;
+  border: 1px solid $mainColor;
+
+  &:hover {
+    background: lighten(blue, 10);
+    color: white;
+  }
+}
+
+footer {
+  margin: 35px 0;
+  text-align: center;
+}
+
+#socialMediaLinks {
+  margin: 10px 0;
+
+  li {
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  .fa {
+    font-size: 35px;
+    color: black;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}

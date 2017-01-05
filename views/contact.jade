@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  #contact-content
+    p Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!
+    form(method='post' action='/')
+      label(for='first-name') First Name
+      input(id='first-name' type='text')
+      label(for='last-name') Last Name
+      input(id='last-name' type='text')
+      label(for='phone-number') Phone Number
+      input(id='phone-number' type='text')
+      label(for='email') Email
+      input(id='email' type='email')
+      label(for='message') Message
+      textarea(id='message' rows='4' cols='50')
+      a.button(href='/contact') Send
